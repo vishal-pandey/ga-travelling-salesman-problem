@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>traveling_salesman_problem</title>
+<title>travelling_salesman_problem</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13115,7 +13115,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">plotly</span>
@@ -13160,13 +13160,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[1]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.2505328764784571</pre>
+<pre>0.031890073964391585</pre>
 </div>
 
 </div>
@@ -13177,7 +13177,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
@@ -13190,10 +13190,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[258]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nodes</span> <span class="o">=</span> <span class="mi">15</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nodes</span> <span class="o">=</span> <span class="mi">5</span>
 </pre></div>
 
     </div>
@@ -13203,7 +13203,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[259]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nodes</span><span class="p">)]</span>
@@ -13217,7 +13217,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[260]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -13238,8 +13238,8 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[55, 89, 75, 45, 61, 56, 30, 76, 31, 49, 11, 29, 77, 25, 94]
-[15, 11, 94, 87, 72, 21, 9, 64, 36, 38, 76, 3, 67, 70, 60]
+<pre>[25, 25, 88, 37, 81]
+[49, 13, 58, 73, 6]
 </pre>
 </div>
 </div>
@@ -13250,7 +13250,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[261]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
@@ -13267,7 +13267,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[262]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">trace</span><span class="p">]</span>
@@ -13280,7 +13280,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[263]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plotly</span><span class="o">.</span><span class="n">offline</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
@@ -13301,11 +13301,11 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<div id="53f193e0-ebb9-4987-8f68-779ed5101c3e" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";
-if (document.getElementById("53f193e0-ebb9-4987-8f68-779ed5101c3e")) {
-    Plotly.newPlot("53f193e0-ebb9-4987-8f68-779ed5101c3e", [{"mode": "markers", "x": [55, 89, 75, 45, 61, 56, 30, 76, 31, 49, 11, 29, 77, 25, 94], "y": [15, 11, 94, 87, 72, 21, 9, 64, 36, 38, 76, 3, 67, 70, 60], "type": "scatter", "uid": "a6b9c41e-7952-4716-a0d2-63545b2006e6"}], {}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"}); 
+<div id="e54e496a-6338-42a2-b434-4844a43b59e5" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";
+if (document.getElementById("e54e496a-6338-42a2-b434-4844a43b59e5")) {
+    Plotly.newPlot("e54e496a-6338-42a2-b434-4844a43b59e5", [{"mode": "markers", "x": [25, 25, 88, 37, 81], "y": [49, 13, 58, 73, 6], "type": "scatter", "uid": "1c07773a-ab8c-48d4-be2e-bea0abae8696"}], {}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"}); 
 }
-});</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("53f193e0-ebb9-4987-8f68-779ed5101c3e")) {window._Plotly.Plots.resize(document.getElementById("53f193e0-ebb9-4987-8f68-779ed5101c3e"));};})</script>
+});</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("e54e496a-6338-42a2-b434-4844a43b59e5")) {window._Plotly.Plots.resize(document.getElementById("e54e496a-6338-42a2-b434-4844a43b59e5"));};})</script>
 </div>
 
 </div>
@@ -13316,7 +13316,7 @@ if (document.getElementById("53f193e0-ebb9-4987-8f68-779ed5101c3e")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[264]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)):</span>
@@ -13337,21 +13337,11 @@ if (document.getElementById("53f193e0-ebb9-4987-8f68-779ed5101c3e")) {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(55, 15, 0)
-(89, 11, 1)
-(75, 94, 2)
-(45, 87, 3)
-(61, 72, 4)
-(56, 21, 5)
-(30, 9, 6)
-(76, 64, 7)
-(31, 36, 8)
-(49, 38, 9)
-(11, 76, 10)
-(29, 3, 11)
-(77, 67, 12)
-(25, 70, 13)
-(94, 60, 14)
+<pre>(25, 49, 0)
+(25, 13, 1)
+(88, 58, 2)
+(37, 73, 3)
+(81, 6, 4)
 </pre>
 </div>
 </div>
@@ -13362,7 +13352,7 @@ if (document.getElementById("53f193e0-ebb9-4987-8f68-779ed5101c3e")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[265]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="k">import</span> <span class="n">combinations</span><span class="p">,</span> <span class="n">permutations</span>
@@ -13375,7 +13365,7 @@ if (document.getElementById("53f193e0-ebb9-4987-8f68-779ed5101c3e")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[266]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">individual</span><span class="p">():</span>
@@ -13391,7 +13381,7 @@ if (document.getElementById("53f193e0-ebb9-4987-8f68-779ed5101c3e")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[267]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">plotind</span><span class="p">(</span><span class="n">order</span><span class="p">):</span>
@@ -13426,11 +13416,11 @@ if (document.getElementById("53f193e0-ebb9-4987-8f68-779ed5101c3e")) {
 
 
 <div class="output_html rendered_html output_subarea ">
-<div id="41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";
-if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
-    Plotly.newPlot("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8", [{"x": [94, 76, 56, 75, 25, 49, 77, 89, 11, 45, 61, 31, 55, 29, 30, 94], "y": [60, 64, 21, 94, 70, 38, 67, 11, 76, 87, 72, 36, 15, 3, 9, 60], "type": "scatter", "uid": "8d273fbf-944b-4ff5-82a8-9a3116d5e9db"}], {}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"}); 
+<div id="ab8a2d1d-b543-4b0a-869d-a41956b95033" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";
+if (document.getElementById("ab8a2d1d-b543-4b0a-869d-a41956b95033")) {
+    Plotly.newPlot("ab8a2d1d-b543-4b0a-869d-a41956b95033", [{"x": [25, 88, 81, 37, 25, 25], "y": [13, 58, 6, 73, 49, 13], "type": "scatter", "uid": "d983ed08-ce77-4c60-b336-db4a67b8bb2c"}], {}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"}); 
 }
-});</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {window._Plotly.Plots.resize(document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8"));};})</script>
+});</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("ab8a2d1d-b543-4b0a-869d-a41956b95033")) {window._Plotly.Plots.resize(document.getElementById("ab8a2d1d-b543-4b0a-869d-a41956b95033"));};})</script>
 </div>
 
 </div>
@@ -13441,7 +13431,7 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[268]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Fitmess Function</span>
@@ -13469,13 +13459,13 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[56]:</div>
+    <div class="prompt output_prompt">Out[268]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>600</pre>
+<pre>235</pre>
 </div>
 
 </div>
@@ -13486,7 +13476,7 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[269]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">population</span><span class="p">(</span><span class="n">length</span><span class="p">):</span>
@@ -13502,7 +13492,7 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[270]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">grade</span><span class="p">(</span><span class="n">pop</span><span class="p">):</span>
@@ -13521,13 +13511,13 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[58]:</div>
+    <div class="prompt output_prompt">Out[270]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>720.2</pre>
+<pre>230.44</pre>
 </div>
 
 </div>
@@ -13538,7 +13528,7 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[271]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Evolution of GA</span>
@@ -13598,7 +13588,7 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[272]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fitness_history</span> <span class="o">=</span> <span class="p">[</span><span class="n">grade</span><span class="p">(</span><span class="n">pop1</span><span class="p">)]</span>
@@ -13611,7 +13601,7 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[273]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fitness_history</span>
@@ -13627,13 +13617,13 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[61]:</div>
+    <div class="prompt output_prompt">Out[273]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[720.2]</pre>
+<pre>[230.44]</pre>
 </div>
 
 </div>
@@ -13644,22 +13634,151 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[274]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">*</span><span class="mi">20</span><span class="p">):</span>
-  <span class="n">pop1</span> <span class="o">=</span> <span class="n">evolve</span><span class="p">(</span><span class="n">pop1</span><span class="p">)</span>
-  <span class="n">fitness_history</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">grade</span><span class="p">(</span><span class="n">pop1</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plot_history</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nodes</span><span class="o">*</span><span class="mi">20</span><span class="p">):</span>
+    <span class="n">pop1</span> <span class="o">=</span> <span class="n">evolve</span><span class="p">(</span><span class="n">pop1</span><span class="p">)</span>
+<span class="c1">#     print(len(pop1))</span>
+    <span class="n">e_x_m</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pop1</span><span class="p">[</span><span class="mi">10</span><span class="o">*</span><span class="n">nodes</span><span class="o">-</span><span class="n">i</span><span class="o">//</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+    <span class="n">e_y_m</span> <span class="o">=</span> <span class="p">[</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pop1</span><span class="p">[</span><span class="mi">10</span><span class="o">*</span><span class="n">nodes</span><span class="o">-</span><span class="n">i</span><span class="o">//</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+  
+    <span class="n">e_x_m</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">pop1</span><span class="p">[</span><span class="mi">10</span><span class="o">*</span><span class="n">nodes</span><span class="o">-</span><span class="n">i</span><span class="o">//</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]])</span>
+    <span class="n">e_y_m</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">pop1</span><span class="p">[</span><span class="mi">10</span><span class="o">*</span><span class="n">nodes</span><span class="o">-</span><span class="n">i</span><span class="o">//</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]])</span>
+    <span class="n">plot_history</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;data&#39;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">e_x_m</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">e_y_m</span><span class="p">}]})</span>
+    <span class="n">fitness_history</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">grade</span><span class="p">(</span><span class="n">pop1</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="n">nodes</span><span class="o">-</span><span class="n">i</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
+<span class="c1">#     print(pop1)</span>
+<span class="c1">#     break</span>
+<span class="c1"># print(plot_history)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>50
+50
+49
+49
+48
+48
+47
+47
+46
+46
+45
+45
+44
+44
+43
+43
+42
+42
+41
+41
+40
+40
+39
+39
+38
+38
+37
+37
+36
+36
+35
+35
+34
+34
+33
+33
+32
+32
+31
+31
+30
+30
+29
+29
+28
+28
+27
+27
+26
+26
+25
+25
+24
+24
+23
+23
+22
+22
+21
+21
+20
+20
+19
+19
+18
+18
+17
+17
+16
+16
+15
+15
+14
+14
+13
+13
+12
+12
+11
+11
+10
+10
+9
+9
+8
+8
+7
+7
+6
+6
+5
+5
+4
+4
+3
+3
+2
+2
+1
+1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[275]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fitness_history</span>
@@ -13675,313 +13794,113 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[63]:</div>
+    <div class="prompt output_prompt">Out[275]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[720.2,
- 699.2266666666667,
- 684.74,
- 667.98,
- 661.1333333333333,
- 644.6933333333334,
- 634.62,
- 619.24,
- 612.6533333333333,
- 609.6666666666666,
- 590.4866666666667,
- 584.9333333333333,
- 574.8466666666667,
- 580.08,
- 591.94,
- 590.3133333333334,
- 585.64,
- 579.4133333333333,
- 567.8666666666667,
- 557.8133333333334,
- 563.4,
- 543.96,
- 538.4533333333334,
- 539.2,
- 530.8666666666667,
- 517.1,
- 512.58,
- 508.85333333333335,
- 501.3066666666667,
- 509.44666666666666,
- 500.4866666666667,
- 495.8933333333333,
- 503.2,
- 502.04,
- 496.38,
- 489.44666666666666,
- 475.02,
- 461.9066666666667,
- 447.49333333333334,
- 447.61333333333334,
- 446.9866666666667,
- 440.14,
- 434.52666666666664,
- 438.99333333333334,
- 447.44666666666666,
- 449.50666666666666,
- 440.78,
- 438.62666666666667,
- 439.68,
- 436.54,
- 435.12666666666667,
- 426.1933333333333,
- 415.2133333333333,
- 406.74,
- 412.35333333333335,
- 406.2266666666667,
- 411.56666666666666,
- 398.96666666666664,
- 401.0,
- 397.3666666666667,
- 404.96,
- 410.4533333333333,
- 403.24666666666667,
- 405.98,
- 412.23333333333335,
- 405.7,
- 407.3066666666667,
- 410.23333333333335,
- 401.4866666666667,
- 411.50666666666666,
- 412.23333333333335,
- 406.1533333333333,
- 404.9533333333333,
- 405.0133333333333,
- 405.9066666666667,
- 399.7266666666667,
- 399.73333333333335,
- 397.75333333333333,
- 396.17333333333335,
- 399.47333333333336,
- 384.03333333333336,
- 384.6666666666667,
- 389.28,
- 389.00666666666666,
- 396.00666666666666,
- 391.2133333333333,
- 396.49333333333334,
- 387.93333333333334,
- 385.16,
- 379.35333333333335,
- 378.97333333333336,
- 371.9066666666667,
- 378.49333333333334,
- 377.17333333333335,
- 375.46,
- 382.7,
- 384.73333333333335,
- 384.93333333333334,
- 387.14666666666665,
- 390.0733333333333,
- 394.7733333333333,
- 388.7266666666667,
- 386.0733333333333,
- 382.44666666666666,
- 376.12,
- 369.8933333333333,
- 376.44,
- 379.96666666666664,
- 372.5733333333333,
- 375.64666666666665,
- 383.88666666666666,
- 381.8,
- 372.58,
- 370.79333333333335,
- 368.79333333333335,
- 373.35333333333335,
- 371.4266666666667,
- 366.56666666666666,
- 373.6333333333333,
- 371.22,
- 374.62,
- 379.5733333333333,
- 372.2266666666667,
- 371.6533333333333,
- 371.54,
- 366.8,
- 372.2866666666667,
- 381.29333333333335,
- 380.94666666666666,
- 384.5466666666667,
- 380.7733333333333,
- 380.38666666666666,
- 383.43333333333334,
- 382.56666666666666,
- 386.8066666666667,
- 388.67333333333335,
- 385.8333333333333,
- 385.9,
- 390.25333333333333,
- 393.2133333333333,
- 392.58,
- 394.7866666666667,
- 390.00666666666666,
- 396.28,
- 395.06666666666666,
- 398.8066666666667,
- 402.20666666666665,
- 403.08666666666664,
- 399.76666666666665,
- 403.26666666666665,
- 403.76,
- 405.44666666666666,
- 401.56,
- 400.50666666666666,
- 402.1533333333333,
- 404.32666666666665,
- 411.9066666666667,
- 410.3,
- 399.74666666666667,
- 397.8466666666667,
- 395.78,
- 396.6533333333333,
- 396.4,
- 398.5466666666667,
- 396.8333333333333,
- 398.18,
- 404.68,
- 403.5466666666667,
- 407.49333333333334,
- 419.1666666666667,
- 422.58666666666664,
- 421.23333333333335,
- 414.1933333333333,
- 418.84,
- 419.78,
- 423.4066666666667,
- 425.36,
- 424.3066666666667,
- 434.1933333333333,
- 428.1533333333333,
- 420.46,
- 421.1066666666667,
- 423.67333333333335,
- 421.38666666666666,
- 417.62666666666667,
- 421.28,
- 414.2866666666667,
- 407.58,
- 405.5466666666667,
- 404.31333333333333,
- 398.53333333333336,
- 401.0,
- 410.56,
- 414.6066666666667,
- 418.38666666666666,
- 416.8333333333333,
- 414.4533333333333,
- 417.76666666666665,
- 411.92,
- 409.53333333333336,
- 412.75333333333333,
- 400.0466666666667,
- 407.79333333333335,
- 416.48,
- 425.1933333333333,
- 423.37333333333333,
- 427.25333333333333,
- 425.84,
- 429.5,
- 425.08,
- 424.1933333333333,
- 417.4266666666667,
- 415.68666666666667,
- 418.0933333333333,
- 423.2866666666667,
- 421.47333333333336,
- 423.24,
- 423.0133333333333,
- 418.4066666666667,
- 430.86,
- 431.17333333333335,
- 427.55333333333334,
- 428.6066666666667,
- 430.4533333333333,
- 425.1666666666667,
- 425.04,
- 431.50666666666666,
- 422.17333333333335,
- 418.36,
- 418.1066666666667,
- 407.53333333333336,
- 405.64666666666665,
- 405.6066666666667,
- 403.11333333333334,
- 401.8,
- 406.37333333333333,
- 415.38,
- 420.96666666666664,
- 429.96,
- 428.2266666666667,
- 422.8466666666667,
- 412.98,
- 403.99333333333334,
- 404.48,
- 406.34,
- 401.6933333333333,
- 404.82,
- 401.9066666666667,
- 408.7866666666667,
- 402.91333333333336,
- 401.23333333333335,
- 396.1,
- 398.70666666666665,
- 392.02666666666664,
- 393.46666666666664,
- 388.58666666666664,
- 392.64,
- 398.2733333333333,
- 390.96,
- 388.96,
- 389.4866666666667,
- 390.56,
- 396.08,
- 393.03333333333336,
- 400.36,
- 408.66,
- 399.37333333333333,
- 403.68,
- 411.96666666666664,
- 415.55333333333334,
- 413.49333333333334,
- 408.00666666666666,
- 408.62666666666667,
- 406.58666666666664,
- 409.50666666666666,
- 404.43333333333334,
- 407.68666666666667,
- 411.88666666666666,
- 415.3,
- 410.46,
- 410.23333333333335,
- 402.6333333333333,
- 412.18,
- 413.7733333333333,
- 407.6066666666667,
- 400.41333333333336,
- 394.91333333333336,
- 400.20666666666665,
- 405.43333333333334,
- 414.2133333333333,
- 404.49333333333334,
- 403.62,
- 405.3333333333333,
- 405.64,
- 399.8666666666667,
- 396.04,
- 395.1,
- 395.73333333333335,
- 398.32,
- 401.8466666666667,
- 395.32666666666665]</pre>
+<pre>[230.44,
+ 227.24,
+ 223.4,
+ 214.24,
+ 213.86,
+ 209.08,
+ 210.08,
+ 210.0,
+ 202.56,
+ 205.46,
+ 209.1,
+ 207.98,
+ 205.5,
+ 208.24,
+ 208.44,
+ 208.92,
+ 210.76,
+ 209.92,
+ 209.46,
+ 207.04,
+ 207.18,
+ 209.84,
+ 208.38,
+ 205.42,
+ 197.82,
+ 200.46,
+ 202.9,
+ 203.18,
+ 208.08,
+ 196.1,
+ 199.7,
+ 200.12,
+ 201.64,
+ 203.1,
+ 205.64,
+ 205.52,
+ 206.58,
+ 205.32,
+ 204.84,
+ 211.34,
+ 206.28,
+ 203.1,
+ 201.02,
+ 205.16,
+ 195.4,
+ 194.84,
+ 202.78,
+ 203.38,
+ 210.28,
+ 204.88,
+ 201.46,
+ 212.5,
+ 208.12,
+ 204.1,
+ 204.12,
+ 206.3,
+ 204.96,
+ 206.56,
+ 209.3,
+ 200.52,
+ 201.06,
+ 200.32,
+ 203.08,
+ 200.54,
+ 199.28,
+ 197.9,
+ 196.88,
+ 202.54,
+ 200.88,
+ 204.44,
+ 202.54,
+ 207.64,
+ 213.48,
+ 209.9,
+ 210.8,
+ 209.38,
+ 208.34,
+ 208.48,
+ 204.74,
+ 205.76,
+ 207.78,
+ 209.96,
+ 201.12,
+ 205.04,
+ 204.04,
+ 209.84,
+ 207.1,
+ 208.12,
+ 209.52,
+ 212.68,
+ 211.8,
+ 210.38,
+ 213.56,
+ 220.48,
+ 219.38,
+ 212.7,
+ 205.74,
+ 204.86,
+ 201.48,
+ 201.0,
+ 205.86]</pre>
 </div>
 
 </div>
@@ -13992,7 +13911,7 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[276]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">best</span> <span class="o">=</span> <span class="n">pop1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -14012,13 +13931,13 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[64]:</div>
+    <div class="prompt output_prompt">Out[276]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[9, 8, 10, 13, 3, 2, 4, 12, 7, 14, 1, 0, 5, 6, 11]</pre>
+<pre>[1, 0, 3, 2, 4]</pre>
 </div>
 
 </div>
@@ -14029,7 +13948,7 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[277]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fitness</span><span class="p">(</span><span class="n">best</span><span class="p">)</span>
@@ -14045,13 +13964,13 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[65]:</div>
+    <div class="prompt output_prompt">Out[277]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>319</pre>
+<pre>167</pre>
 </div>
 
 </div>
@@ -14062,7 +13981,7 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[278]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plotind</span><span class="p">(</span><span class="n">best</span><span class="p">)</span>
@@ -14083,11 +14002,11 @@ if (document.getElementById("41f3fdd8-5d1f-4637-b689-daa3c9cbb1e8")) {
 
 
 <div class="output_html rendered_html output_subarea ">
-<div id="69a151c8-c4dd-4d08-8cc0-5dc0fc7b682e" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";
-if (document.getElementById("69a151c8-c4dd-4d08-8cc0-5dc0fc7b682e")) {
-    Plotly.newPlot("69a151c8-c4dd-4d08-8cc0-5dc0fc7b682e", [{"x": [49, 31, 11, 25, 45, 75, 61, 77, 76, 94, 89, 55, 56, 30, 29, 49], "y": [38, 36, 76, 70, 87, 94, 72, 67, 64, 60, 11, 15, 21, 9, 3, 38], "type": "scatter", "uid": "97e640b6-e967-423a-838d-5b1f44dc5193"}], {}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"}); 
+<div id="d5e31726-1f26-473f-9c0c-4a474e278646" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";
+if (document.getElementById("d5e31726-1f26-473f-9c0c-4a474e278646")) {
+    Plotly.newPlot("d5e31726-1f26-473f-9c0c-4a474e278646", [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter", "uid": "77e7c101-a67c-4200-939f-e126998fbebc"}], {}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"}); 
 }
-});</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("69a151c8-c4dd-4d08-8cc0-5dc0fc7b682e")) {window._Plotly.Plots.resize(document.getElementById("69a151c8-c4dd-4d08-8cc0-5dc0fc7b682e"));};})</script>
+});</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("d5e31726-1f26-473f-9c0c-4a474e278646")) {window._Plotly.Plots.resize(document.getElementById("d5e31726-1f26-473f-9c0c-4a474e278646"));};})</script>
 </div>
 
 </div>
@@ -14098,7 +14017,72 @@ if (document.getElementById("69a151c8-c4dd-4d08-8cc0-5dc0fc7b682e")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[279]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[280]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">figure</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;data&#39;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]}],</span>
+          <span class="s1">&#39;layout&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;xaxis&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span> <span class="s1">&#39;autorange&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">},</span>
+                     <span class="s1">&#39;yaxis&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span> <span class="s1">&#39;autorange&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">},</span>
+                     <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;GA Travelling Sales Man Problem&#39;</span><span class="p">,</span>
+                     <span class="s1">&#39;updatemenus&#39;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;buttons&#39;</span><span class="p">,</span>
+                                      <span class="s1">&#39;buttons&#39;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;Play&#39;</span><span class="p">,</span>
+                                                   <span class="s1">&#39;method&#39;</span><span class="p">:</span> <span class="s1">&#39;animate&#39;</span><span class="p">,</span>
+                                                   <span class="s1">&#39;args&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">]}]}],</span>
+                    <span class="p">},</span>
+          <span class="s1">&#39;frames&#39;</span><span class="p">:</span> <span class="n">plot_history</span><span class="p">}</span>
+
+<span class="n">iplot</span><span class="p">(</span><span class="n">figure</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<div id="11908d87-3a5c-45d7-a5ee-1da8d31e281d" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";
+    if (document.getElementById("11908d87-3a5c-45d7-a5ee-1da8d31e281d")) {
+        Plotly.plot(
+            '11908d87-3a5c-45d7-a5ee-1da8d31e281d',
+            [{"x": [0, 1], "y": [0, 1], "type": "scatter", "uid": "8996881d-b62d-446c-a3b9-0db5be679987"}],
+            {"title": {"text": "GA Travelling Sales Man Problem"}, "updatemenus": [{"buttons": [{"args": [null], "label": "Play", "method": "animate"}], "type": "buttons"}], "xaxis": {"autorange": false, "range": [0, 100]}, "yaxis": {"autorange": false, "range": [0, 100]}},
+            {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"}
+        ).then(function () {return Plotly.addFrames('11908d87-3a5c-45d7-a5ee-1da8d31e281d',[{"data": [{"x": [88, 25, 25, 37, 81, 88], "y": [58, 49, 13, 73, 6, 58], "type": "scatter"}]}, {"data": [{"x": [88, 81, 25, 25, 37, 88], "y": [58, 6, 49, 13, 73, 58], "type": "scatter"}]}, {"data": [{"x": [25, 88, 37, 25, 81, 25], "y": [49, 58, 73, 13, 6, 49], "type": "scatter"}]}, {"data": [{"x": [37, 81, 88, 25, 25, 37], "y": [73, 6, 58, 49, 13, 73], "type": "scatter"}]}, {"data": [{"x": [88, 81, 37, 25, 25, 88], "y": [58, 6, 73, 13, 49, 58], "type": "scatter"}]}, {"data": [{"x": [88, 37, 81, 25, 25, 88], "y": [58, 73, 6, 49, 13, 58], "type": "scatter"}]}, {"data": [{"x": [88, 81, 25, 37, 25, 88], "y": [58, 6, 13, 73, 49, 58], "type": "scatter"}]}, {"data": [{"x": [25, 88, 81, 25, 37, 25], "y": [13, 58, 6, 49, 73, 13], "type": "scatter"}]}, {"data": [{"x": [88, 81, 25, 37, 25, 88], "y": [58, 6, 13, 73, 49, 58], "type": "scatter"}]}, {"data": [{"x": [25, 81, 37, 25, 88, 25], "y": [49, 6, 73, 13, 58, 49], "type": "scatter"}]}, {"data": [{"x": [88, 81, 37, 25, 25, 88], "y": [58, 6, 73, 13, 49, 58], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [81, 25, 25, 88, 37, 81], "y": [6, 13, 49, 58, 73, 6], "type": "scatter"}]}, {"data": [{"x": [25, 37, 88, 25, 81, 25], "y": [13, 73, 58, 49, 6, 13], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [25, 37, 88, 25, 81, 25], "y": [49, 73, 58, 13, 6, 49], "type": "scatter"}]}, {"data": [{"x": [81, 88, 37, 25, 25, 81], "y": [6, 58, 73, 13, 49, 6], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [81, 25, 25, 37, 88, 81], "y": [6, 13, 49, 73, 58, 6], "type": "scatter"}]}, {"data": [{"x": [81, 37, 88, 25, 25, 81], "y": [6, 73, 58, 13, 49, 6], "type": "scatter"}]}, {"data": [{"x": [25, 25, 88, 37, 81, 25], "y": [13, 49, 58, 73, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 81, 37, 88, 25], "y": [13, 49, 6, 73, 58, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 81, 37, 88, 25], "y": [13, 49, 6, 73, 58, 13], "type": "scatter"}]}, {"data": [{"x": [81, 25, 25, 88, 37, 81], "y": [6, 13, 49, 58, 73, 6], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [25, 25, 81, 37, 88, 25], "y": [13, 49, 6, 73, 58, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 81, 37, 88, 25], "y": [13, 49, 6, 73, 58, 13], "type": "scatter"}]}, {"data": [{"x": [81, 88, 37, 25, 25, 81], "y": [6, 58, 73, 13, 49, 6], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [88, 37, 81, 25, 25, 88], "y": [58, 73, 6, 13, 49, 58], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [81, 37, 88, 25, 25, 81], "y": [6, 73, 58, 13, 49, 6], "type": "scatter"}]}, {"data": [{"x": [81, 37, 88, 25, 25, 81], "y": [6, 73, 58, 13, 49, 6], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [25, 25, 88, 37, 81, 25], "y": [13, 49, 58, 73, 6, 13], "type": "scatter"}]}, {"data": [{"x": [81, 37, 88, 25, 25, 81], "y": [6, 73, 58, 13, 49, 6], "type": "scatter"}]}, {"data": [{"x": [81, 37, 88, 25, 25, 81], "y": [6, 73, 58, 13, 49, 6], "type": "scatter"}]}, {"data": [{"x": [81, 25, 25, 37, 88, 81], "y": [6, 13, 49, 73, 58, 6], "type": "scatter"}]}, {"data": [{"x": [25, 88, 81, 25, 37, 25], "y": [13, 58, 6, 49, 73, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 81, 37, 88, 25], "y": [13, 49, 6, 73, 58, 13], "type": "scatter"}]}, {"data": [{"x": [37, 88, 25, 81, 25, 37], "y": [73, 58, 49, 6, 13, 73], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [81, 25, 25, 88, 37, 81], "y": [6, 13, 49, 58, 73, 6], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [25, 25, 81, 37, 88, 25], "y": [13, 49, 6, 73, 58, 13], "type": "scatter"}]}, {"data": [{"x": [25, 37, 88, 25, 81, 25], "y": [49, 73, 58, 13, 6, 49], "type": "scatter"}]}, {"data": [{"x": [37, 25, 25, 81, 88, 37], "y": [73, 13, 49, 6, 58, 73], "type": "scatter"}]}, {"data": [{"x": [25, 81, 25, 88, 37, 25], "y": [13, 6, 49, 58, 73, 13], "type": "scatter"}]}, {"data": [{"x": [88, 25, 25, 37, 81, 88], "y": [58, 13, 49, 73, 6, 58], "type": "scatter"}]}, {"data": [{"x": [37, 25, 81, 88, 25, 37], "y": [73, 49, 6, 58, 13, 73], "type": "scatter"}]}, {"data": [{"x": [25, 37, 81, 88, 25, 25], "y": [49, 73, 6, 58, 13, 49], "type": "scatter"}]}, {"data": [{"x": [88, 37, 81, 25, 25, 88], "y": [58, 73, 6, 49, 13, 58], "type": "scatter"}]}, {"data": [{"x": [88, 37, 81, 25, 25, 88], "y": [58, 73, 6, 49, 13, 58], "type": "scatter"}]}, {"data": [{"x": [37, 25, 25, 88, 81, 37], "y": [73, 13, 49, 58, 6, 73], "type": "scatter"}]}, {"data": [{"x": [81, 25, 25, 37, 88, 81], "y": [6, 49, 13, 73, 58, 6], "type": "scatter"}]}, {"data": [{"x": [81, 88, 25, 37, 25, 81], "y": [6, 58, 13, 73, 49, 6], "type": "scatter"}]}, {"data": [{"x": [25, 88, 81, 25, 37, 25], "y": [49, 58, 6, 13, 73, 49], "type": "scatter"}]}, {"data": [{"x": [25, 88, 81, 25, 37, 25], "y": [49, 58, 6, 13, 73, 49], "type": "scatter"}]}, {"data": [{"x": [37, 25, 25, 88, 81, 37], "y": [73, 13, 49, 58, 6, 73], "type": "scatter"}]}, {"data": [{"x": [37, 25, 25, 88, 81, 37], "y": [73, 13, 49, 58, 6, 73], "type": "scatter"}]}, {"data": [{"x": [37, 25, 25, 88, 81, 37], "y": [73, 13, 49, 58, 6, 73], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [25, 25, 81, 88, 37, 25], "y": [13, 49, 6, 58, 73, 13], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [81, 25, 25, 37, 88, 81], "y": [6, 13, 49, 73, 58, 6], "type": "scatter"}]}, {"data": [{"x": [81, 25, 25, 37, 88, 81], "y": [6, 13, 49, 73, 58, 6], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 81, 88, 25], "y": [13, 49, 73, 6, 58, 13], "type": "scatter"}]}, {"data": [{"x": [37, 25, 25, 88, 81, 37], "y": [73, 49, 13, 58, 6, 73], "type": "scatter"}]}, {"data": [{"x": [88, 37, 25, 81, 25, 88], "y": [58, 73, 49, 6, 13, 58], "type": "scatter"}]}, {"data": [{"x": [81, 88, 25, 37, 25, 81], "y": [6, 58, 49, 73, 13, 6], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [37, 88, 81, 25, 25, 37], "y": [73, 58, 6, 13, 49, 73], "type": "scatter"}]}, {"data": [{"x": [81, 25, 25, 37, 88, 81], "y": [6, 13, 49, 73, 58, 6], "type": "scatter"}]}, {"data": [{"x": [88, 81, 25, 25, 37, 88], "y": [58, 6, 13, 49, 73, 58], "type": "scatter"}]}, {"data": [{"x": [81, 25, 25, 37, 88, 81], "y": [6, 13, 49, 73, 58, 6], "type": "scatter"}]}, {"data": [{"x": [81, 25, 25, 37, 88, 81], "y": [6, 13, 49, 73, 58, 6], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}, {"data": [{"x": [25, 25, 37, 88, 81, 25], "y": [13, 49, 73, 58, 6, 13], "type": "scatter"}]}]);}).then(function(){Plotly.animate('11908d87-3a5c-45d7-a5ee-1da8d31e281d');})
+    }
+        });</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("11908d87-3a5c-45d7-a5ee-1da8d31e281d")) {window._Plotly.Plots.resize(document.getElementById("11908d87-3a5c-45d7-a5ee-1da8d31e281d"));};})</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span> 
